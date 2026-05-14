@@ -16,9 +16,9 @@ app.use("/api/submissions", submissionRoutes);
 app.get("/", (req, res) => {
   res.send("API Running...");
 });
-
+// changing something 
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect(process.env.MONGO_CONNECT_URI) 
   .then(() => {
     console.log("MongoDB Connected Successfully");
   })
